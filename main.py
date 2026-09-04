@@ -1,12 +1,13 @@
 from goblin import Goblin
 from orc import Orc
+from skeleton import Skeleton
 
 
-goblin = Goblin()
-orc = Orc()
+enemies = [
+    Goblin(),
+    Orc(),
+    Skeleton(),
+]
 
-print(goblin.name)
-print(goblin.health)
-
-print(orc.name)
-print(orc.health)
+for enemy in enemies:
+    print(f"{enemy.name} attacks for {enemy.attack()} damage.")

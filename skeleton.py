@@ -1,10 +1,10 @@
 from enemy import Enemy
 
 
-class Orc(Enemy):
+class Skeleton(Enemy):
     def __init__(self):
-        super().__init__("Orc", 80)
-    
+        super().__init__("Skeleton", 30)
+
     def attack(self):
-        damage = 15
+        damage = 8
         return damage
