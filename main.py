@@ -1,11 +1,11 @@
 from player import Player
 
+player = Player("Fahad", 100)
 
-player1 = Player("Fahad", 100)
-player2 = Player("Goblin Slayer", 150)
+print(player.name)
 
-print(player1.name)
-print(player1.health)
+print(player.health)
 
-print(player2.name)
-print(player2.health)
+damage = player.attack()
+
+print("Attack damage:", damage)
